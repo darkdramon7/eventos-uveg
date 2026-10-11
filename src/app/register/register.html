@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h2>Registro al Evento</h2>
+
+  <form [formGroup]="registroForm">
+
+    <div class="grupo">
+      <label>Nombre completo</label>
+      <input type="text" formControlName="nombre">
+    </div>
+
+    <div class="grupo">
+      <label>Correo electrónico</label>
+      <input type="email" formControlName="email">
+    </div>
+
+    <div class="grupo">
+      <label>Contraseña</label>
+      <input type="password" formControlName="password">
+    </div>
+
+    <div class="grupo">
+      <label>Fecha del evento</label>
+      <input type="date" formControlName="fecha">
+    </div>
+
+    <button type="submit" [disabled]="registroForm.invalid">
+      Registrarse
+    </button>
+
+  </form>
+
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h2>Eventos Disponibles</h2>
+
+  <div class="eventos">
+
+    <div class="card" *ngFor="let evento of eventos">
+
+      <h3>{{ evento.nombre }}</h3>
+
+      <button [routerLink]="['/event', evento.id]">
+        Ver detalles
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
